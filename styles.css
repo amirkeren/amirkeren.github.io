@@ -1,0 +1,295 @@
+/* ── Reset & Base ─────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #1a1a1a;
+  background: #fff;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ── Layout ───────────────────────────────────────── */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 64px 0;
+}
+
+section + section {
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ── Hero ──────────────────────────────────────────── */
+.hero {
+  padding: 96px 0 64px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.hero .title {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.hero .tagline {
+  font-size: 1.05rem;
+  color: #666;
+  max-width: 480px;
+  margin: 0 auto 24px;
+}
+
+.hero-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-links a {
+  font-weight: 500;
+}
+
+/* ── Section titles ───────────────────────────────── */
+section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+
+/* ── About ─────────────────────────────────────────── */
+.about p {
+  color: #333;
+}
+
+/* ── Experience ────────────────────────────────────── */
+.job {
+  margin-bottom: 36px;
+}
+
+.job:last-child {
+  margin-bottom: 0;
+}
+
+.job-header {
+  margin-bottom: 8px;
+}
+
+.job h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.job .company {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.job .dates {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.job ul {
+  padding-left: 20px;
+  color: #444;
+}
+
+.job li {
+  margin-bottom: 4px;
+}
+
+/* ── Skills ────────────────────────────────────────── */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #f3f4f6;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* ── Projects ──────────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.project-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.project-card a {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* ── Education & Certifications ────────────────────── */
+.certs-list {
+  padding-left: 20px;
+  color: #444;
+}
+
+.certs-list li {
+  margin-bottom: 4px;
+}
+
+/* ── Contact ───────────────────────────────────────── */
+.contact p {
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fafafa;
+  color: #1a1a1a;
+  transition: border-color 0.15s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 28px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.contact-form button:hover {
+  background: #1d4ed8;
+}
+
+.contact-email {
+  margin-top: 24px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* ── Footer ────────────────────────────────────────── */
+footer {
+  text-align: center;
+  padding: 32px 0;
+  font-size: 0.85rem;
+  color: #999;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ── Responsive ────────────────────────────────────── */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 64px 0 48px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 48px 0;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    text-align: center;
+  }
+}
